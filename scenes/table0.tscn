@@ -3,11 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://cv6rf3rk8sa5k" path="res://assets/Untitled 17.png" id="1_k84bp"]
 [ext_resource type="Script" path="res://scenes/table_0.gd" id="1_uxixw"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_c04og"]
-size = Vector2(44, 17)
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_hvini"]
+bounce = 0.19
 
-[node name="RigidBody2D" type="RigidBody2D"]
+[node name="table0" type="RigidBody2D"]
 input_pickable = true
+physics_material_override = SubResource("PhysicsMaterial_hvini")
 script = ExtResource("1_uxixw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -15,5 +16,7 @@ texture = ExtResource("1_k84bp")
 region_enabled = true
 region_rect = Rect2(0, 63, 44, 17)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_c04og")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-22, -4.5, -20, -4.5, -20, 8.5, -4, 8.5, -4, -4.5, 4, -4.5, 4, 8.5, 20, 8.5, 20, -4.5, 22, -4.5, 22, -8.5, -22, -8.5)
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

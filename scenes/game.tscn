@@ -1,19 +1,42 @@
-[gd_scene load_steps=3 format=3 uid="uid://b8m5nior74lig"]
+[gd_scene load_steps=4 format=3 uid="uid://b8m5nior74lig"]
 
 [ext_resource type="PackedScene" uid="uid://cfa7372g6u5qn" path="res://scenes/table0.tscn" id="1_1eqs3"]
+[ext_resource type="Script" path="res://scenes/game.gd" id="1_qtgp3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_86jqc"]
 size = Vector2(1157, 20)
 
 [node name="Game" type="Node2D"]
+script = ExtResource("1_qtgp3")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="RigidBody2D" parent="." instance=ExtResource("1_1eqs3")]
-
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(1, 128)
+position = Vector2(7, 132)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-2, -2)
+position = Vector2(0, -2)
 shape = SubResource("RectangleShape2D_86jqc")
+
+[node name="Furniture" type="Node" parent="."]
+
+[node name="table" parent="Furniture" groups=["pickable"] instance=ExtResource("1_1eqs3")]
+position = Vector2(-4, 0)
+
+[node name="table2" parent="Furniture" groups=["pickable"] instance=ExtResource("1_1eqs3")]
+position = Vector2(-35, 51)
+
+[node name="table3" parent="Furniture" groups=["pickable"] instance=ExtResource("1_1eqs3")]
+position = Vector2(85, 56)
+
+[node name="table4" parent="Furniture" groups=["pickable"] instance=ExtResource("1_1eqs3")]
+position = Vector2(-77, 13)
+
+[node name="table5" parent="Furniture" groups=["pickable"] instance=ExtResource("1_1eqs3")]
+position = Vector2(74, -13)
+
+[node name="table6" parent="Furniture" groups=["pickable"] instance=ExtResource("1_1eqs3")]
+position = Vector2(42, -44)
+
+[node name="table7" parent="Furniture" groups=["pickable"] instance=ExtResource("1_1eqs3")]
+position = Vector2(-50, -37)

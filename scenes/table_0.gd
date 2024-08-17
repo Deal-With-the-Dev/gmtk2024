@@ -1,13 +1,26 @@
 extends RigidBody2D
 
-var can_grab = false
-var grabbed_offset = Vector2()
+signal clicked
 
-func _input_event(viewport, event, shape_idx):
-	if event is InputEventMouseButton:
-		can_grab = event.pressed
-		grabbed_offset = position - get_global_mouse_position()
+var held = false
 
-func _process(delta):
-	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and can_grab:
-		position = get_global_mouse_position() + grabbed_offset
+func _on_input_event(viewport, event, shape_idx):
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+		if event.pressed:
+			clicked.emit(self)
+			
+func _physics_process(delta):
+	if held:
+		global_transform.origin = get_global_mouse_position()
+
+func pickup():
+	if held:
+		return
+	freeze = true
+	held = true
+
+func drop(impulse=Vector2.ZERO):
+	if held:
+		freeze = false
+		apply_central_impulse(impulse)
+		held = false
