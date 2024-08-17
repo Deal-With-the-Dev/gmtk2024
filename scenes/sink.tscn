@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://br2u4mqp3uhr7"]
+
+[ext_resource type="Script" path="res://scenes/furniture.gd" id="1_2p0po"]
+[ext_resource type="Texture2D" uid="uid://cv6rf3rk8sa5k" path="res://assets/Untitled 17.png" id="2_a5py7"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_hvini"]
+bounce = 0.19
+
+[node name="table0" type="RigidBody2D"]
+input_pickable = true
+physics_material_override = SubResource("PhysicsMaterial_hvini")
+script = ExtResource("1_2p0po")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_a5py7")
+region_enabled = true
+region_rect = Rect2(144, 96, 25, 28)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-12.5, 4, -8.5, 4, -11.5, 8, -12.5, 8, -9.5, 13, -9.5, 14, 9.5, 14, 11.5, 11, 12.5, 11, 10.5, 6, 8.5, 6, 12.5, 4, 12.5, -14, -12.5, -14)
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
