@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://f0gounc4f35o"]
+[gd_scene load_steps=4 format=3 uid="uid://cwr7lfglkiv3c"]
 
-[ext_resource type="Texture2D" uid="uid://j0qxlqbenldg" path="res://Assets/sprites/slime_green.png" id="1_qe1wg"]
+[ext_resource type="Texture2D" uid="uid://j0qxlqbenldg" path="res://assets/slime_green.png" id="1_qe1wg"]
 [ext_resource type="Script" path="res://slime.gd" id="2_1jqb8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mlb5b"]
