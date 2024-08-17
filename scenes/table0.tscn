@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfa7372g6u5qn"]
+
+[ext_resource type="Texture2D" uid="uid://cv6rf3rk8sa5k" path="res://assets/Untitled 17.png" id="1_k84bp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c04og"]
+size = Vector2(44, 17)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+input_pickable = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_k84bp")
+region_enabled = true
+region_rect = Rect2(0, 63, 44, 17)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_c04og")
