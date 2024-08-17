@@ -1,0 +1,98 @@
+[gd_scene load_steps=6 format=3 uid="uid://dfe18gqe8ujm6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pjc15"]
+size = Vector2(478, 40)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oaaw3"]
+size = Vector2(40, 247.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jpuk8"]
+size = Vector2(80, 40)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_x5dnb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w05pl"]
+size = Vector2(30.0732, 20.4016)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="RigidBody2D3" type="RigidBody2D" parent="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="Node2D/RigidBody2D3"]
+offset_left = -218.0
+offset_top = -348.0
+offset_right = 260.0
+offset_bottom = -308.0
+color = Color(0.485113, 0.986715, 0.851093, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D3"]
+position = Vector2(20, -326)
+shape = SubResource("RectangleShape2D_pjc15")
+
+[node name="RigidBody2D1" type="RigidBody2D" parent="Node2D"]
+freeze = true
+
+[node name="ColorRect" type="ColorRect" parent="Node2D/RigidBody2D1"]
+offset_top = -393.0
+offset_right = 40.0
+offset_bottom = -142.0
+color = Color(0.860541, 0.557961, 0.652345, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D1"]
+position = Vector2(20, -267)
+shape = SubResource("RectangleShape2D_oaaw3")
+
+[node name="PinJoint2D" type="PinJoint2D" parent="Node2D"]
+position = Vector2(20, -326)
+skew = 1.56905
+node_a = NodePath("../RigidBody2D3")
+node_b = NodePath("../RigidBody2D1")
+bias = 0.9
+
+[node name="RigidBody2D4" type="RigidBody2D" parent="Node2D"]
+lock_rotation = true
+
+[node name="ColorRect" type="ColorRect" parent="Node2D/RigidBody2D4"]
+offset_left = -20.0
+offset_top = -433.0
+offset_right = 61.0
+offset_bottom = -393.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/RigidBody2D4"]
+position = Vector2(20, -412)
+shape = SubResource("RectangleShape2D_jpuk8")
+
+[node name="PinJoint2D2" type="PinJoint2D" parent="Node2D"]
+position = Vector2(20, -393)
+node_a = NodePath("../RigidBody2D1")
+node_b = NodePath("../RigidBody2D4")
+disable_collision = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+scale = Vector2(-1.5185, 0.191462)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(5.92691, -694.655)
+scale = Vector2(1.10007, 8.30128)
+shape = SubResource("WorldBoundaryShape2D_x5dnb")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-2, 0)
+offset = Vector2(0, -100)
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2(13, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(-98, -539)
+scale = Vector2(1.19563, -1.63437)
+shape = SubResource("RectangleShape2D_w05pl")
+
+[node name="ColorRect" type="ColorRect" parent="RigidBody2D"]
+offset_left = -79.0
+offset_top = -558.0
+offset_right = -39.0
+offset_bottom = -518.0
+scale = Vector2(-0.933759, 0.906173)
