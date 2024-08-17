@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://f0gounc4f35o"]
+
+[ext_resource type="Texture2D" uid="uid://j0qxlqbenldg" path="res://Assets/sprites/slime_green.png" id="1_qe1wg"]
+[ext_resource type="Script" path="res://slime.gd" id="2_1jqb8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mlb5b"]
+size = Vector2(13, 14)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="SlimeP" type="Area2D" parent="."]
+scale = Vector2(1.00807, 1.01227)
+
+[node name="Slime" type="Sprite2D" parent="SlimeP"]
+position = Vector2(-1, -1)
+texture = ExtResource("1_qe1wg")
+region_enabled = true
+region_rect = Rect2(77, 35, 14, 13)
+script = ExtResource("2_1jqb8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SlimeP"]
+position = Vector2(-1, -2)
+shape = SubResource("RectangleShape2D_mlb5b")
+
+[node name="Button" type="Button" parent="SlimeP"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 6.0
+offset_top = -9.0
+offset_right = 14.0
+offset_bottom = -0.999999
+scale = Vector2(-1.75476, 1.77625)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(10, 10)
+
+[connection signal="button_down" from="SlimeP/Button" to="SlimeP/Slime" method="_on_button_button_down"]
+[connection signal="button_up" from="SlimeP/Button" to="SlimeP/Slime" method="_on_button_button_up"]
