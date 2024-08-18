@@ -1,0 +1,644 @@
+[gd_scene load_steps=3 format=3 uid="uid://brptk15ng8bs8"]
+
+[ext_resource type="Script" path="res://scenes/house.gd" id="1_1p4qg"]
+[ext_resource type="Texture2D" uid="uid://1xi7icxjr68i" path="res://assets/tileset/LPC_house_interior/interior.png" id="1_w0hh7"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(36.2227, 0.472473)
+script = ExtResource("1_1p4qg")
+
+[node name="Room0" type="RigidBody2D" parent="." groups=["Walls"]]
+position = Vector2(-86.6336, 4.38405)
+
+[node name="Sprite2D" type="Sprite2D" parent="Room0"]
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 6, 7, 23)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Room0"]
+polygon = PackedVector2Array(-3.5, 11.5, 3.5, 11.5, 3.5, -11.5, -3.5, -11.5)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Room0"]
+position = Vector2(0, 21)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 31, 7, 20)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Room0"]
+position = Vector2(0, 21)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D3" type="Sprite2D" parent="Room0"]
+position = Vector2(0, 41)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 64, 7, 20)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Room0"]
+position = Vector2(0, 41)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D4" type="Sprite2D" parent="Room0"]
+position = Vector2(88.986, -0.0190725)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 6, 7, 23)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Room0"]
+position = Vector2(88.986, -0.0190725)
+polygon = PackedVector2Array(-3.5, 11.5, 3.5, 11.5, 3.5, -11.5, -3.5, -11.5)
+
+[node name="Sprite2D5" type="Sprite2D" parent="Room0"]
+position = Vector2(88.986, 20.9809)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 31, 7, 20)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Room0"]
+position = Vector2(88.986, 20.9809)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D6" type="Sprite2D" parent="Room0"]
+position = Vector2(88.986, 40.9809)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 64, 7, 20)
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Room0"]
+position = Vector2(88.986, 40.9809)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D7" type="Sprite2D" parent="Room0"]
+position = Vector2(44.4865, 53.7153)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 83, 96, 6)
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="Room0"]
+position = Vector2(44.4865, 53.7153)
+polygon = PackedVector2Array(-48, 3, 48, 3, 48, -3, -48, -3)
+
+[node name="Sprite2D8" type="Sprite2D" parent="Room0"]
+position = Vector2(44.5095, -14.5118)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 83, 96, 6)
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="Room0"]
+position = Vector2(44.5095, -14.5118)
+polygon = PackedVector2Array(-48, 3, 48, 3, 48, -3, -48, -3)
+
+[node name="Sprite2D9" type="Sprite2D" parent="Room0"]
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 6, 7, 23)
+
+[node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="Room0"]
+polygon = PackedVector2Array(-3.5, 11.5, 3.5, 11.5, 3.5, -11.5, -3.5, -11.5)
+
+[node name="Sprite2D10" type="Sprite2D" parent="Room0"]
+position = Vector2(0, 21)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 31, 7, 20)
+
+[node name="CollisionPolygon2D10" type="CollisionPolygon2D" parent="Room0"]
+position = Vector2(0, 21)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D11" type="Sprite2D" parent="Room0"]
+position = Vector2(0, 41)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 64, 7, 20)
+
+[node name="CollisionPolygon2D11" type="CollisionPolygon2D" parent="Room0"]
+position = Vector2(0, 41)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D12" type="Sprite2D" parent="Room0"]
+position = Vector2(88.986, -0.0190725)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 6, 7, 23)
+
+[node name="CollisionPolygon2D12" type="CollisionPolygon2D" parent="Room0"]
+position = Vector2(88.986, -0.0190725)
+polygon = PackedVector2Array(-3.5, 11.5, 3.5, 11.5, 3.5, -11.5, -3.5, -11.5)
+
+[node name="Sprite2D13" type="Sprite2D" parent="Room0"]
+position = Vector2(88.986, 20.9809)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 31, 7, 20)
+
+[node name="CollisionPolygon2D13" type="CollisionPolygon2D" parent="Room0"]
+position = Vector2(88.986, 20.9809)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D14" type="Sprite2D" parent="Room0"]
+position = Vector2(88.986, 40.9809)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 64, 7, 20)
+
+[node name="CollisionPolygon2D14" type="CollisionPolygon2D" parent="Room0"]
+position = Vector2(88.986, 40.9809)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D15" type="Sprite2D" parent="Room0"]
+position = Vector2(44.4865, 53.7153)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 83, 96, 6)
+
+[node name="CollisionPolygon2D15" type="CollisionPolygon2D" parent="Room0"]
+position = Vector2(44.4865, 53.7153)
+polygon = PackedVector2Array(-48, 3, 48, 3, 48, -3, -48, -3)
+
+[node name="Sprite2D16" type="Sprite2D" parent="Room0"]
+position = Vector2(44.5095, -14.5118)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 83, 96, 6)
+
+[node name="CollisionPolygon2D16" type="CollisionPolygon2D" parent="Room0"]
+position = Vector2(44.5095, -14.5118)
+polygon = PackedVector2Array(-48, 3, 48, 3, 48, -3, -48, -3)
+
+[node name="Room1" type="RigidBody2D" parent="." groups=["Walls"]]
+position = Vector2(9.37803, 4.36658)
+
+[node name="Sprite2D" type="Sprite2D" parent="Room1"]
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 6, 7, 23)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Room1"]
+polygon = PackedVector2Array(-3.5, 11.5, 3.5, 11.5, 3.5, -11.5, -3.5, -11.5)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Room1"]
+position = Vector2(0, 21)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 31, 7, 20)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Room1"]
+position = Vector2(0, 21)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D3" type="Sprite2D" parent="Room1"]
+position = Vector2(0, 41)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 64, 7, 20)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Room1"]
+position = Vector2(0, 41)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D4" type="Sprite2D" parent="Room1"]
+position = Vector2(88.986, -0.0190725)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 6, 7, 23)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Room1"]
+position = Vector2(88.986, -0.0190725)
+polygon = PackedVector2Array(-3.5, 11.5, 3.5, 11.5, 3.5, -11.5, -3.5, -11.5)
+
+[node name="Sprite2D5" type="Sprite2D" parent="Room1"]
+position = Vector2(88.986, 20.9809)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 31, 7, 20)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Room1"]
+position = Vector2(88.986, 20.9809)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D6" type="Sprite2D" parent="Room1"]
+position = Vector2(88.986, 40.9809)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 64, 7, 20)
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Room1"]
+position = Vector2(88.986, 40.9809)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D7" type="Sprite2D" parent="Room1"]
+position = Vector2(44.4865, 53.7153)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 83, 96, 6)
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="Room1"]
+position = Vector2(44.4865, 53.7153)
+polygon = PackedVector2Array(-48, 3, 48, 3, 48, -3, -48, -3)
+
+[node name="Sprite2D8" type="Sprite2D" parent="Room1"]
+position = Vector2(44.5095, -14.5118)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 83, 96, 6)
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="Room1"]
+position = Vector2(44.5095, -14.5118)
+polygon = PackedVector2Array(-48, 3, 48, 3, 48, -3, -48, -3)
+
+[node name="Sprite2D9" type="Sprite2D" parent="Room1"]
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 6, 7, 23)
+
+[node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="Room1"]
+polygon = PackedVector2Array(-3.5, 11.5, 3.5, 11.5, 3.5, -11.5, -3.5, -11.5)
+
+[node name="Sprite2D10" type="Sprite2D" parent="Room1"]
+position = Vector2(0, 21)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 31, 7, 20)
+
+[node name="CollisionPolygon2D10" type="CollisionPolygon2D" parent="Room1"]
+position = Vector2(0, 21)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D11" type="Sprite2D" parent="Room1"]
+position = Vector2(0, 41)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 64, 7, 20)
+
+[node name="CollisionPolygon2D11" type="CollisionPolygon2D" parent="Room1"]
+position = Vector2(0, 41)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D12" type="Sprite2D" parent="Room1"]
+position = Vector2(88.986, -0.0190725)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 6, 7, 23)
+
+[node name="CollisionPolygon2D12" type="CollisionPolygon2D" parent="Room1"]
+position = Vector2(88.986, -0.0190725)
+polygon = PackedVector2Array(-3.5, 11.5, 3.5, 11.5, 3.5, -11.5, -3.5, -11.5)
+
+[node name="Sprite2D13" type="Sprite2D" parent="Room1"]
+position = Vector2(88.986, 20.9809)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 31, 7, 20)
+
+[node name="CollisionPolygon2D13" type="CollisionPolygon2D" parent="Room1"]
+position = Vector2(88.986, 20.9809)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D14" type="Sprite2D" parent="Room1"]
+position = Vector2(88.986, 40.9809)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 64, 7, 20)
+
+[node name="CollisionPolygon2D14" type="CollisionPolygon2D" parent="Room1"]
+position = Vector2(88.986, 40.9809)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D15" type="Sprite2D" parent="Room1"]
+position = Vector2(44.4865, 53.7153)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 83, 96, 6)
+
+[node name="CollisionPolygon2D15" type="CollisionPolygon2D" parent="Room1"]
+position = Vector2(44.4865, 53.7153)
+polygon = PackedVector2Array(-48, 3, 48, 3, 48, -3, -48, -3)
+
+[node name="Sprite2D16" type="Sprite2D" parent="Room1"]
+position = Vector2(44.5095, -14.5118)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 83, 96, 6)
+
+[node name="CollisionPolygon2D16" type="CollisionPolygon2D" parent="Room1"]
+position = Vector2(44.5095, -14.5118)
+polygon = PackedVector2Array(-48, 3, 48, 3, 48, -3, -48, -3)
+
+[node name="Room2" type="RigidBody2D" parent="." groups=["Walls"]]
+position = Vector2(-86.6336, -69.6159)
+
+[node name="Sprite2D" type="Sprite2D" parent="Room2"]
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 6, 7, 23)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Room2"]
+polygon = PackedVector2Array(-3.5, 11.5, 3.5, 11.5, 3.5, -11.5, -3.5, -11.5)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Room2"]
+position = Vector2(0, 21)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 31, 7, 20)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Room2"]
+position = Vector2(0, 21)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D3" type="Sprite2D" parent="Room2"]
+position = Vector2(0, 41)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 64, 7, 20)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Room2"]
+position = Vector2(0, 41)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D4" type="Sprite2D" parent="Room2"]
+position = Vector2(88.986, -0.0190725)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 6, 7, 23)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Room2"]
+position = Vector2(88.986, -0.0190725)
+polygon = PackedVector2Array(-3.5, 11.5, 3.5, 11.5, 3.5, -11.5, -3.5, -11.5)
+
+[node name="Sprite2D5" type="Sprite2D" parent="Room2"]
+position = Vector2(88.986, 20.9809)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 31, 7, 20)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Room2"]
+position = Vector2(88.986, 20.9809)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D6" type="Sprite2D" parent="Room2"]
+position = Vector2(88.986, 40.9809)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 64, 7, 20)
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Room2"]
+position = Vector2(88.986, 40.9809)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D7" type="Sprite2D" parent="Room2"]
+position = Vector2(44.4865, 53.7153)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 83, 96, 6)
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="Room2"]
+position = Vector2(44.4865, 53.7153)
+polygon = PackedVector2Array(-48, 3, 48, 3, 48, -3, -48, -3)
+
+[node name="Sprite2D8" type="Sprite2D" parent="Room2"]
+position = Vector2(44.5095, -14.5118)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 83, 96, 6)
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="Room2"]
+position = Vector2(44.5095, -14.5118)
+polygon = PackedVector2Array(-48, 3, 48, 3, 48, -3, -48, -3)
+
+[node name="Sprite2D9" type="Sprite2D" parent="Room2"]
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 6, 7, 23)
+
+[node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="Room2"]
+polygon = PackedVector2Array(-3.5, 11.5, 3.5, 11.5, 3.5, -11.5, -3.5, -11.5)
+
+[node name="Sprite2D10" type="Sprite2D" parent="Room2"]
+position = Vector2(0, 21)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 31, 7, 20)
+
+[node name="CollisionPolygon2D10" type="CollisionPolygon2D" parent="Room2"]
+position = Vector2(0, 21)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D11" type="Sprite2D" parent="Room2"]
+position = Vector2(0, 41)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 64, 7, 20)
+
+[node name="CollisionPolygon2D11" type="CollisionPolygon2D" parent="Room2"]
+position = Vector2(0, 41)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D12" type="Sprite2D" parent="Room2"]
+position = Vector2(88.986, -0.0190725)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 6, 7, 23)
+
+[node name="CollisionPolygon2D12" type="CollisionPolygon2D" parent="Room2"]
+position = Vector2(88.986, -0.0190725)
+polygon = PackedVector2Array(-3.5, 11.5, 3.5, 11.5, 3.5, -11.5, -3.5, -11.5)
+
+[node name="Sprite2D13" type="Sprite2D" parent="Room2"]
+position = Vector2(88.986, 20.9809)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 31, 7, 20)
+
+[node name="CollisionPolygon2D13" type="CollisionPolygon2D" parent="Room2"]
+position = Vector2(88.986, 20.9809)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D14" type="Sprite2D" parent="Room2"]
+position = Vector2(88.986, 40.9809)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 64, 7, 20)
+
+[node name="CollisionPolygon2D14" type="CollisionPolygon2D" parent="Room2"]
+position = Vector2(88.986, 40.9809)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D15" type="Sprite2D" parent="Room2"]
+position = Vector2(44.4865, 53.7153)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 83, 96, 6)
+
+[node name="CollisionPolygon2D15" type="CollisionPolygon2D" parent="Room2"]
+position = Vector2(44.4865, 53.7153)
+polygon = PackedVector2Array(-48, 3, 48, 3, 48, -3, -48, -3)
+
+[node name="Sprite2D16" type="Sprite2D" parent="Room2"]
+position = Vector2(44.5095, -14.5118)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 83, 96, 6)
+
+[node name="CollisionPolygon2D16" type="CollisionPolygon2D" parent="Room2"]
+position = Vector2(44.5095, -14.5118)
+polygon = PackedVector2Array(-48, 3, 48, 3, 48, -3, -48, -3)
+
+[node name="Room3" type="RigidBody2D" parent="." groups=["Walls"]]
+position = Vector2(9.37803, -69.6334)
+
+[node name="Sprite2D" type="Sprite2D" parent="Room3"]
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 6, 7, 23)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Room3"]
+polygon = PackedVector2Array(-3.5, 11.5, 3.5, 11.5, 3.5, -11.5, -3.5, -11.5)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Room3"]
+position = Vector2(0, 21)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 31, 7, 20)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Room3"]
+position = Vector2(0, 21)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D3" type="Sprite2D" parent="Room3"]
+position = Vector2(0, 41)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 64, 7, 20)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Room3"]
+position = Vector2(0, 41)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D4" type="Sprite2D" parent="Room3"]
+position = Vector2(88.986, -0.0190725)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 6, 7, 23)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Room3"]
+position = Vector2(88.986, -0.0190725)
+polygon = PackedVector2Array(-3.5, 11.5, 3.5, 11.5, 3.5, -11.5, -3.5, -11.5)
+
+[node name="Sprite2D5" type="Sprite2D" parent="Room3"]
+position = Vector2(88.986, 20.9809)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 31, 7, 20)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Room3"]
+position = Vector2(88.986, 20.9809)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D6" type="Sprite2D" parent="Room3"]
+position = Vector2(88.986, 40.9809)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 64, 7, 20)
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Room3"]
+position = Vector2(88.986, 40.9809)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D7" type="Sprite2D" parent="Room3"]
+position = Vector2(44.4865, 53.7153)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 83, 96, 6)
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="Room3"]
+position = Vector2(44.4865, 53.7153)
+polygon = PackedVector2Array(-48, 3, 48, 3, 48, -3, -48, -3)
+
+[node name="Sprite2D8" type="Sprite2D" parent="Room3"]
+position = Vector2(44.5095, -14.5118)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 83, 96, 6)
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="Room3"]
+position = Vector2(44.5095, -14.5118)
+polygon = PackedVector2Array(-48, 3, 48, 3, 48, -3, -48, -3)
+
+[node name="Sprite2D9" type="Sprite2D" parent="Room3"]
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 6, 7, 23)
+
+[node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="Room3"]
+polygon = PackedVector2Array(-3.5, 11.5, 3.5, 11.5, 3.5, -11.5, -3.5, -11.5)
+
+[node name="Sprite2D10" type="Sprite2D" parent="Room3"]
+position = Vector2(0, 21)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 31, 7, 20)
+
+[node name="CollisionPolygon2D10" type="CollisionPolygon2D" parent="Room3"]
+position = Vector2(0, 21)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D11" type="Sprite2D" parent="Room3"]
+position = Vector2(0, 41)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 64, 7, 20)
+
+[node name="CollisionPolygon2D11" type="CollisionPolygon2D" parent="Room3"]
+position = Vector2(0, 41)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D12" type="Sprite2D" parent="Room3"]
+position = Vector2(88.986, -0.0190725)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 6, 7, 23)
+
+[node name="CollisionPolygon2D12" type="CollisionPolygon2D" parent="Room3"]
+position = Vector2(88.986, -0.0190725)
+polygon = PackedVector2Array(-3.5, 11.5, 3.5, 11.5, 3.5, -11.5, -3.5, -11.5)
+
+[node name="Sprite2D13" type="Sprite2D" parent="Room3"]
+position = Vector2(88.986, 20.9809)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 31, 7, 20)
+
+[node name="CollisionPolygon2D13" type="CollisionPolygon2D" parent="Room3"]
+position = Vector2(88.986, 20.9809)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D14" type="Sprite2D" parent="Room3"]
+position = Vector2(88.986, 40.9809)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 64, 7, 20)
+
+[node name="CollisionPolygon2D14" type="CollisionPolygon2D" parent="Room3"]
+position = Vector2(88.986, 40.9809)
+polygon = PackedVector2Array(-3.5, 10, 3.5, 10, 3.5, -10, -3.5, -10)
+
+[node name="Sprite2D15" type="Sprite2D" parent="Room3"]
+position = Vector2(44.4865, 53.7153)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 83, 96, 6)
+
+[node name="CollisionPolygon2D15" type="CollisionPolygon2D" parent="Room3"]
+position = Vector2(44.4865, 53.7153)
+polygon = PackedVector2Array(-48, 3, 48, 3, 48, -3, -48, -3)
+
+[node name="Sprite2D16" type="Sprite2D" parent="Room3"]
+position = Vector2(44.5095, -14.5118)
+texture = ExtResource("1_w0hh7")
+region_enabled = true
+region_rect = Rect2(64, 83, 96, 6)
+
+[node name="CollisionPolygon2D16" type="CollisionPolygon2D" parent="Room3"]
+position = Vector2(44.5095, -14.5118)
+polygon = PackedVector2Array(-48, 3, 48, 3, 48, -3, -48, -3)
